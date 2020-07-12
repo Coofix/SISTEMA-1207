@@ -1,7 +1,7 @@
 <?php
 	$servidor = "localhost";
 	$usuario = "root";
-	$senha = "MMallf@@1520";
+	$senha = "";
 	$dbname = "oldlove";
 	
 	//Criar a conexao
