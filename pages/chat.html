@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Chat</title>
+
+    <!-- Common plugins -->
+    <link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="plugins/simple-line-icons/simple-line-icons.css" rel="stylesheet">
+    <link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="plugins/pace/pace.css" rel="stylesheet">
+    <link href="plugins/jasny-bootstrap/css/jasny-bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="plugins/nano-scroll/nanoscroller.css">
+    <link rel="stylesheet" href="plugins/metisMenu/metisMenu.min.css">
+    <!--template css-->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--top bar start-->
+    <div class="top-bar light-top-bar">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-6">
+                    <a href="index.html" class="admin-logo">
+                        <h1><img src="images/logo-dark.png" alt=""></h1>
+                    </a>
+                    <div class="left-nav-toggle visible-xs visible-sm">
+                        <a href="">
+                            <i class="glyphicon glyphicon-menu-hamburger"></i>
+                        </a>
+                    </div>
+                    <!--end nav toggle icon-->
+
+                </div>
+                <div class="col-xs-6">
+                    <ul class="list-inline top-right-nav">
+                        <li class="dropdown avtar-dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <img src="images/avtar-1.jpg" class="img-circle" width="30" alt="">
+                            </a>
+                            <ul class="dropdown-menu top-dropdown">
+                                <!-- <li><a href="javascript: void(0);"><i class="icon-bell"></i> Activities</a></li>
+                                        <li><a href="javascript: void(0);"><i class="icon-user"></i> Profile</a></li>
+                                        <li><a href="javascript: void(0);"><i class="icon-settings"></i> Settings</a></li>
+                                        <li class="divider"></li> -->
+                                <li><a href="javascript: void(0);"><i class="icon-logout"></i> Sair</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- top bar end-->
+
+    <!--left navigation start-->
+    <aside class="float-navigation light-navigation">
+        <div class="nano">
+            <div class="nano-content">
+                <ul class="metisMenu nav" id="menu">
+                    <li class="nav-heading"><span></span></li>
+                    <li><a href="index.html"><i class="fa fa-diamond"></i> Inicio </a></li>
+                    <li><a href="gerenciamento.html"><i class="fa fa-diamond"></i> Gerenciamento </a></li>
+                    <li><a href="fichapaciente.html"><i class="fa fa-diamond"></i> Ficha paciente </a></li>
+                    <li><a href="dadosdiarios.html"><i class="fa fa-diamond"></i> Dados Diários </a></li>
+                    <li><a href="chat.html"><i class="fa fa-diamond"></i> Chat </a></li>
+                </ul>
+            </div>
+            <!--nano content-->
+        </div>
+        <!--nano scroll end-->
+    </aside>
+    <!--left navigation end-->
+
+
+    <!--main content start-->
+    <section class="main-content">
+        <!--page header start-->
+        <div class="page-header">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h4>Chat</h4>
+                </div>
+            </div>
+        </div>
+        <!--page header end-->
+
+
+        <!--start page content-->
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        Mensagens
+                    </div>
+                    <div class="panel-body no-padding">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="chat-room padding-20">
+                                    <ul class="chat-list list-unstyled">
+                                        <li class="clearfix chat-element">
+                                            <a href="javascript: void(0);" class="pull-left">
+                                                <img src="images/avtar-1.jpg" alt="" class="img-circle">
+                                            </a>
+                                            <div class="media-body ">
+                                                <div class="speech-box">
+                                                    <small class="pull-right text-primary">1m atrás</small>
+                                                    <strong>Cliente</strong>
+                                                    <p class="margin-b-0">
+                                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                                                    </p>
+                                                    <small class="text-info">Hoje 12:31 pm - 10.04.2020</small>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <!--end chat elements-->
+                                        <li class="clearfix chat-element right">
+                                            <a href="javascript: void(0);" class="pull-right">
+                                                <img src="images/avtar-2.jpg" alt="" class="img-circle">
+                                            </a>
+                                            <div class="media-body text-right">
+                                                <div class="speech-box">
+                                                    <small class="pull-left text-primary">1m atrás</small>
+                                                    <strong>Funcionário</strong>
+                                                    <p class="margin-b-0 text-right">
+                                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                                                    </p>
+                                                    <small class="text-info">Hoje 12:31 pm - 10.04.2020</small>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <!--end chat elements-->
+
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--chat room-->
+                            </div>
+                            <div class="col-md-4">
+                                <div class="chat-contacts padding-20 bg-gray">
+                                    <ul class="list-unstyled sidebar-contact-list">
+                                        <li class="clearfix">
+                                            <a href="#" class="media-box">
+                                                <span class="pull-right">
+                                                <span class="circle circle-success circle-lg"></span>
+                                                </span>
+                                                <span class="pull-left">
+                                                <!-- Contact avatar-->
+                                                <img src="images/avtar-1.jpg" alt="user" class="media-box-object img-circle" width="50">
+                                            </span>
+                                                <!-- Contact info-->
+                                                <span class="media-box-body">
+                                                <span class="media-box-heading">
+                                                    <strong>Angelina</strong>
+                                                    <br>
+                                                    <small class="text-muted">Designer</small>
+                                                </span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <!--li end-->
+                                        <li class="clearfix">
+                                            <a href="#" class="media-box">
+                                                <span class="pull-right">
+                                                <span class="circle circle-success circle-lg"></span>
+                                                </span>
+                                                <span class="pull-left">
+                                                <!-- Contact avatar-->
+                                                <img src="images/avtar-2.jpg" alt="user" class="media-box-object img-circle" width="50">
+                                            </span>
+                                                <!-- Contact info-->
+                                                <span class="media-box-body">
+                                                <span class="media-box-heading">
+                                                    <strong>John doe</strong>
+                                                    <br>
+                                                    <small class="text-muted">Designer</small>
+                                                </span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <!--li end-->
+                                        <li class="clearfix">
+                                            <a href="#" class="media-box">
+                                                <span class="pull-right">
+                                                <span class="circle circle-danger circle-lg"></span>
+                                                </span>
+                                                <span class="pull-left">
+                                                <!-- Contact avatar-->
+                                                <img src="images/avtar-3.jpg" alt="user" class="media-box-object img-circle" width="50">
+                                            </span>
+                                                <!-- Contact info-->
+                                                <span class="media-box-body">
+                                                <span class="media-box-heading">
+                                                    <strong>Eluga Smith</strong>
+                                                    <br>
+                                                    <small class="text-muted">Designer</small>
+                                                </span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <!--li end-->
+                                        <li class="clearfix">
+                                            <a href="#" class="media-box">
+                                                <span class="pull-right">
+                                                <span class="circle circle-lg"></span>
+                                                </span>
+                                                <span class="pull-left">
+                                                <!-- Contact avatar-->
+                                                <img src="images/avtar-4.jpg" alt="user" class="media-box-object img-circle" width="50">
+                                            </span>
+                                                <!-- Contact info-->
+                                                <span class="media-box-body">
+                                                <span class="media-box-heading">
+                                                    <strong>Jonathan Doe</strong>
+                                                    <br>
+                                                    <small class="text-muted">Designer</small>
+                                                </span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <!--li end-->
+                                        <li class="clearfix">
+                                            <a href="#" class="media-box">
+                                                <span class="pull-right">
+                                                <span class="circle circle-success circle-lg"></span>
+                                                </span>
+                                                <span class="pull-left">
+                                                <!-- Contact avatar-->
+                                                <img src="images/avtar-5.jpg" alt="user" class="media-box-object img-circle" width="50">
+                                            </span>
+                                                <!-- Contact info-->
+                                                <span class="media-box-body">
+                                                <span class="media-box-heading">
+                                                    <strong>Angelina</strong>
+                                                    <br>
+                                                    <small class="text-muted">Designer</small>
+                                                </span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <!--li end-->
+                                        <li class="clearfix">
+                                            <a href="#" class="media-box">
+                                                <span class="pull-right">
+                                                <span class="circle circle-success circle-lg"></span>
+                                                </span>
+                                                <span class="pull-left">
+                                                <!-- Contact avatar-->
+                                                <img src="images/avtar-1.jpg" alt="user" class="media-box-object img-circle" width="50">
+                                            </span>
+                                                <!-- Contact info-->
+                                                <span class="media-box-body">
+                                                <span class="media-box-heading">
+                                                    <strong>Angelina</strong>
+                                                    <br>
+                                                    <small class="text-muted">Designer</small>
+                                                </span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <!--li end-->
+                                        <li class="clearfix">
+                                            <a href="#" class="media-box">
+                                                <span class="pull-right">
+                                                <span class="circle circle-success circle-lg"></span>
+                                                </span>
+                                                <span class="pull-left">
+                                                <!-- Contact avatar-->
+                                                <img src="images/avtar-2.jpg" alt="user" class="media-box-object img-circle" width="50">
+                                            </span>
+                                                <!-- Contact info-->
+                                                <span class="media-box-body">
+                                                <span class="media-box-heading">
+                                                    <strong>John doe</strong>
+                                                    <br>
+                                                    <small class="text-muted">Designer</small>
+                                                </span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <!--li end-->
+                                        <li class="clearfix">
+                                            <a href="#" class="media-box">
+                                                <span class="pull-right">
+                                                <span class="circle circle-danger circle-lg"></span>
+                                                </span>
+                                                <span class="pull-left">
+                                                <!-- Contact avatar-->
+                                                <img src="images/avtar-3.jpg" alt="user" class="media-box-object img-circle" width="50">
+                                            </span>
+                                                <!-- Contact info-->
+                                                <span class="media-box-body">
+                                                <span class="media-box-heading">
+                                                    <strong>Eluga Smith</strong>
+                                                    <br>
+                                                    <small class="text-muted">Designer</small>
+                                                </span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <!--li end-->
+                                        <li class="clearfix">
+                                            <a href="#" class="media-box">
+                                                <span class="pull-right">
+                                                <span class="circle circle-lg"></span>
+                                                </span>
+                                                <span class="pull-left">
+                                                <!-- Contact avatar-->
+                                                <img src="images/avtar-4.jpg" alt="user" class="media-box-object img-circle" width="50">
+                                            </span>
+                                                <!-- Contact info-->
+                                                <span class="media-box-body">
+                                                <span class="media-box-heading">
+                                                    <strong>Jonathan Doe</strong>
+                                                    <br>
+                                                    <small class="text-muted">Designer</small>
+                                                </span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <!--li end-->
+                                        <li class="clearfix">
+                                            <a href="#" class="media-box">
+                                                <span class="pull-right">
+                                                <span class="circle circle-success circle-lg"></span>
+                                                </span>
+                                                <span class="pull-left">
+                                                <!-- Contact avatar-->
+                                                <img src="images/avtar-5.jpg" alt="user" class="media-box-object img-circle" width="50">
+                                            </span>
+                                                <!-- Contact info-->
+                                                <span class="media-box-body">
+                                                <span class="media-box-heading">
+                                                    <strong>Angelina</strong>
+                                                    <br>
+                                                    <small class="text-muted">Designer</small>
+                                                </span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <!--li end-->
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end panel body-->
+                    <div class="panel-footer">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Insira sua mensagem aqui...">
+                            <span class="input-group-btn">
+                                    <button class="btn btn-primary">
+                                        Enviar</button>
+                                </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--col-md-6-->
+        </div>
+        <!--row end-->
+
+        <!--end page content-->
+
+
+        <!--Start footer-->
+        <footer class="footer">
+            <span>Copyright &copy; 2020. Coofix</span>
+        </footer>
+        <!--end footer-->
+
+    </section>
+    <!--end main content-->
+
+
+
+    <!--Common plugins-->
+    <script src="plugins/jquery/dist/jquery.min.js"></script>
+    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="plugins/pace/pace.min.js"></script>
+    <script src="plugins/jasny-bootstrap/js/jasny-bootstrap.min.js"></script>
+    <script src="plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="plugins/nano-scroll/jquery.nanoscroller.min.js"></script>
+    <script src="plugins/metisMenu/metisMenu.min.js"></script>
+    <script src="js/float-custom.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.chat-room,.chat-contacts').slimScroll({
+                color: '#eee',
+                size: '5px',
+                height: '500px',
+                alwaysVisible: true
+            });
+        });
+    </script>
+</body>
+
+</html>
